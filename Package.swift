@@ -21,11 +21,5 @@ let package = Package(
                 .product(name: "SwiftToolsSupport-auto", package: "swift-tools-support-core"),
             ]
         ),
-        .testTarget(
-            name: "XcodeBuildServerTests",
-            dependencies: [
-                "XcodeBuildServer",
-            ]
-        ),
     ]
 )

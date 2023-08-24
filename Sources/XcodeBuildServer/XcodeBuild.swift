@@ -36,9 +36,9 @@ struct BuildSettingsForIndex: Decodable {
     struct ObjectiveC: Decodable {
         let clangASTBuiltProductsDir: String
         let clangASTCommandArguments: [String]
-        let clangPCHCommandArguments: [String]
-        let clangPCHFilePath: String
-        let clangPrefixFilePath: String
+        let clangPCHCommandArguments: [String]?
+        let clangPCHFilePath: String?
+        let clangPrefixFilePath: String?
         let outputFilePath: String
         let toolchains: [String]
     }
